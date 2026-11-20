@@ -2,7 +2,7 @@
 
 Projeto de Service Desk para centralizar chamados, acompanhar incidentes ponta a ponta e dar visibilidade em tempo real para operação e liderança.
 
-## 07 - Benefícios Esperados
+## 01 - Benefícios Esperados
 
 - Centralização dos chamados
 - Acompanhamento ponta a ponta
@@ -13,20 +13,20 @@ Projeto de Service Desk para centralizar chamados, acompanhar incidentes ponta a
 
 ![Benefícios Esperados](docs/07-beneficios-esperados.png)
 
-## 08 - Próximos Passos
+## 02 - Próximos Passos
 
 1. Treinamento da equipe de suporte
 2. Expansão para todos os setores
 3. Ajustes nos dashboards conforme feedback
 4. Evolução para automação e integração com outras ferramentas
 
-## 09 - Registrar Chamado no Grafana
+## 03 - Registrar Chamado no Grafana
 
 Tela de cadastro simples e rápida para abertura de chamados, com prioridade, categoria e responsável.
 
 ![Registrar Chamado](docs/registrar-chamado-grafana.png)
 
-## 10 - Jornada do Incidente
+## 04 - Jornada do Incidente
 
 **Abertura > Triagem > Atribuição > Resolução > Encerramento**
 
@@ -34,13 +34,13 @@ Fluxo completo do incidente, do registro até o fechamento com registro de apren
 
 ![Jornada do Incidente](docs/10-jornada-do-incidente.png)
 
-## 11 - Dashboard Operacional / Service Desk
+## 05 - Dashboard Operacional / Service Desk
 
 Visão completa da operação para o time de plantão: total de incidentes, SLA, ciclo de vida, incidentes recentes e por status.
 
 ![Dashboard Operacional](docs/13-service-desk-grafana.png)
 
-## 12 - Visão de Liderança
+## 06 - Visão de Liderança
 
 Visão executiva para gestão: SLA, MTTR, Backlog, CSAT e tendências para tomada de decisão.
 
