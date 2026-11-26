@@ -1,47 +1,74 @@
-# Service Desk - Gestão de Incidentes no Grafana
+# 🎫 Service Desk - Monitoramento com Grafana
 
-Projeto de Service Desk para centralizar chamados, acompanhar incidentes ponta a ponta e dar visibilidade em tempo real para operação e liderança.
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
 
-## 01 - Benefícios Esperados
+> Dashboard completo para monitoramento de Service Desk em tempo real. Visão gerencial de chamados, SLA, performance da equipe e gargalos operacionais.
 
-- Centralização dos chamados
-- Acompanhamento ponta a ponta
-- Dashboards em tempo real
-- Controle de SLA e MTTR
-- Visão executiva para liderança
-- Base para automações futuras
+---
 
-![Benefícios Esperados](docs/07-beneficios-esperados.png)
+## 🎯 O que esse projeto resolve?
 
-## 02 - Próximos Passos
+Sem monitoramento, o Service Desk trabalha no escuro: ninguém sabe quantos chamados estão abertos, qual SLA está estourando, ou onde está o gargalo.
 
-1. Treinamento da equipe de suporte
-2. Expansão para todos os setores
-3. Ajustes nos dashboards conforme feedback
-4. Evolução para automação e integração com outras ferramentas
+Este projeto resolve isso com:
 
-## 03 - Registrar Chamado no Grafana
+- ✅ **Visão em tempo real** de todos os chamados
+- ✅ **Controle de SLA** - sabe na hora o que está atrasado
+- ✅ **Performance por analista / equipe**
+- ✅ **Identificação de gargalos** por categoria e prioridade
+- ✅ **Base para decisão gerencial** com dados, não achismo
 
-Tela de cadastro simples e rápida para abertura de chamados, com prioridade, categoria e responsável.
+---
 
-![Registrar Chamado](docs/registrar-chamado-grafana.png)
+## 📊 O que o Dashboard mostra
 
-## 04 - Jornada do Incidente
+- **Chamados Abertos x Fechados**
+- **Tempo Médio de Resolução (MTTR)**
+- **Chamados por Prioridade (P1, P2, P3, P4)**
+- **Chamados por Categoria**
+- **SLA - Dentro do prazo vs Estourado**
+- **Top Analistas / Equipes**
+- **Volume de chamados por dia / hora**
 
-**Abertura > Triagem > Atribuição > Resolução > Encerramento**
+---
 
-Fluxo completo do incidente, do registro até o fechamento com registro de aprendizado.
+## 🏗️ Arquitetura
+Fonte de Dados (MySQL / CSV) -> Grafana -> Dashboard Service Deskjavascript
+**Fluxo:**
+1. Dados de chamados coletados na base
+2. Grafana conecta na fonte de dados
+3. Painéis transformam dados em gráficos e alertas
+4. Gestor visualiza tudo em tempo real
 
-![Jornada do Incidente](docs/10-jornada-do-incidente.png)
+---
 
-## 05 - Dashboard Operacional / Service Desk
+## 🛠️ Tecnologias
 
-Visão completa da operação para o time de plantão: total de incidentes, SLA, ciclo de vida, incidentes recentes e por status.
+| Tecnologia | Para que foi usada |
+| :--- | :--- |
+| **Grafana** | Visualização, dashboards e alertas |
+| **Prometheus / MySQL** | Fonte de dados dos chamados |
+| **Docker** | Subir o ambiente rápido |
+| **SQL** | Consultas e métricas |
 
-![Dashboard Operacional](docs/13-service-desk-grafana.png)
+---
 
-## 06 - Visão de Liderança
+## 🚀 Como Rodar o Projeto
 
-Visão executiva para gestão: SLA, MTTR, Backlog, CSAT e tendências para tomada de decisão.
-
-![Visão de Liderança](docs/12-visao-de-lideranca.png)
+### 1. Clone o repositório
+```bash
+git clone https://github.com/silvamartinsrafa-rgb/service-desk-grafana.git
+cd service-desk-grafana2. Suba o Grafana com Dockerbashdocker compose up -d3. Acessejavascripthttp://localhost:3000
+Login: admin / admin📁 Estrutura do Projetojavascriptservice-desk-grafana/
+├── docs/               # Prints e documentação (01 a 12)
+├── dashboards/         # JSON exportado do Grafana
+├── queries/            # Queries SQL usadas
+├── docker-compose.yml  # Ambiente Grafana
+└── README.md📈 Resultados / Aprendizados
+Aprendi a criar dashboards gerenciais focados em decisão, não só em gráfico bonitoAprendi a modelar métricas de SLA, MTTR e volumeAprendi a documentar um projeto completo do zero ao GitHub🔗 Conecte-se comigo
+Rafael Silva Martins - Analista de Service Desk | Monitoramento & Observabilidade
+GitHub: https://github.com/silvamartinsrafa-rgb
