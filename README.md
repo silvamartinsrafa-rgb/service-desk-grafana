@@ -8,6 +8,29 @@
 
 > Dashboard completo para monitoramento de Service Desk em tempo real. Visão gerencial de chamados, SLA, performance da equipe e gargalos operacionais.
 
+## 📸 Como Funciona na Prática
+
+### 1. Visão Geral do Service Desk
+![Dashboard Service Desk](docs/13-service-desk-grafana.png)
+> Aqui é o coração do projeto. Dá pra ver todos os chamados abertos, em tempo real, sem precisar abrir planilha.
+
+### 2. Registrar um Chamado
+![Registrar Chamado](docs/registrar-chamado-grafana.png)
+> É aqui que o chamado nasce. Quando abre um chamado, ele já entra no dashboard na hora.
+
+### 3. Jornada do Incidente
+![Jornada do Incidente](docs/10-jornada-do-incidente.png)
+> Mostra o caminho do chamado: abriu, foi atendido, foi resolvido. Assim dá pra saber onde ele trava.
+
+### 4. Visão da Liderança
+![Visão de Liderança](docs/12-visao-de-lideranca.png)
+> Visão pra quem gerencia: SLA, volume, o que está estourando. Pra decidir rápido, sem chute.
+
+### 5. Benefícios Esperados
+![Benefícios](docs/07-beneficios-esperados.png)
+> O resultado final: menos tempo de espera, mais controle e time sabendo onde focar.
+
+
 ---
 
 ## 🎯 O que esse projeto resolve?
